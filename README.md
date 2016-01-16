@@ -1,4 +1,31 @@
-# New-ember
+# Ember-Material-Starter  with cordova
+
+1. Web App is Production Ready , Cordova is beta might not work as expected in all phones
+2. Used ember-paper for material components 
+
+
+This Repo is created with an idea to have off the shelf material ember app with useful components 
+
+This version contains 
+
+*c3-charts 
+*data-table
+*modal-window-component
+
+Roadmap 
+
+* form-component
+* social-component(facebook,twitter etc.)
+* More samples and examples with dynamic routes
+* Much More To Come.. 
+
+References
+* [Ember-cli-cordova](https://github.com/poetic/ember-cli-cordova)
+* [Ember-Paper](https://github.com/miguelcobain/ember-paper)
+
+
+
+
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
