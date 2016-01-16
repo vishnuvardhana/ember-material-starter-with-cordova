@@ -1,0 +1,12 @@
+.list-demo{
+	padding:20px;
+}
+.fl {
+	float:left;
+}
+h5,h4{
+	float:left;
+}
+.width50percent{
+	width:48%!important;
+}

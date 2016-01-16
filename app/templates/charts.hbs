@@ -1,0 +1,33 @@
+{{#paper-list}}
+	 <div class="fl width50percent">
+	    <h5>c3-charts component</h5>
+
+	 </div>	
+	 		 	
+	 <div class="fr width50percent"> {{modal-window-component floatClass="fr" header="c3-charts component - Parameters"  modalBody=model.componentDescription isEachLoop=true}}</div>
+	 
+		  
+  
+  {{#paper-list}}
+    	References
+     
+        <a href="http://c3js.org/examples.html" target="_blank"> C3-Gallary</a>  
+   
+  {{/paper-list}}
+				
+				
+	{{#paper-content class="md-whiteframe-z1 list-demo"}}
+        <br>
+			{{!-- calling c3-charts component
+				  1. make sure chartDiv is changed for every instace u call c3-charts in a particular page
+			 --}}
+			{{#c3-charts typeOfChart='Bar' enableMenu=true chartDiv='chart1'}}
+			 
+			{{/c3-charts}}
+			{{#c3-charts typeOfChart='Line' enableMenu=true chartDiv='chart2'}}
+			 
+			{{/c3-charts}}
+			
+			 
+	{{/paper-content}}
+{{/paper-list}}

@@ -1,0 +1,31 @@
+@import 'ember-paper';
+
+.list-demo{
+	padding:20px;
+}
+.fl {
+	float:left;
+}
+.fr{
+	float:right;
+}
+h5,h4{
+	float:left;
+}
+.width50percent{
+	width:48%!important;
+}
+.header-blue{
+	background:#3F51B5;
+	color:white;
+	font-weight:bold;
+}
+.sideNavHighLight{
+	background:#CCC;
+}
+
+.headerFixed {
+	position:fixed;
+	top:0px;
+	z-index:1001;
+}

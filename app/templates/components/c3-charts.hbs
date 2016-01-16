@@ -1,0 +1,33 @@
+<div class="col-lg-6 col-md-6 col-xs-12">
+	
+	{{#paper-content class="md-whiteframe-z1 grid-list-demo1"}}
+		{{#paper-item class="md-3-line header-blue"}}
+			<h5>{{chartTitle}}</h5>
+
+
+
+			{{#if enableMenu}}
+				
+				{{#paper-menu position="target-right target" as |menu|}}
+					
+					{{#paper-button target=menu action="toggleMenu" icon-button=true}}{{paper-icon class="md-menu-origin" icon="more-vert"}}
+					{{/paper-button}}
+					{{else}}
+					{{#each graphTypes as |typeOfChart|}}
+						{{#paper-menu-item action="menuItemClick" param=typeOfChart}}
+						<p style="width: 190px;">{{typeOfChart}}</p>
+						{{paper-icon icon="insert-chart" class="md-menu-align-target"}}
+						{{/paper-menu-item}}
+					{{/each}}
+				{{/paper-menu}}
+			{{/if}}
+		{{/paper-item}}
+		{{paper-divider}}
+		
+		<br>
+		<div class={{chartDiv}} ></div>
+
+	{{/paper-content}}
+	<br>
+	
+</div>

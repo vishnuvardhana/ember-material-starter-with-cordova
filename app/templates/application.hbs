@@ -1,3 +1,45 @@
-<h2 id="title">Welcome to Ember</h2>
 
-{{outlet}}
+{{#paper-nav-container}}
+	
+	{{#paper-sidenav class="md-sidenav-left md-whiteframe-z2" locked-open="gt-sm"}}
+		{{#paper-toolbar}}
+		<div class="md-toolbar-tools">
+			<div class="logo">
+				<strong>Ember Material</strong>
+			</div>
+		</div>
+		{{/paper-toolbar}}
+	
+		{{#paper-content}}
+			
+			{{#paper-list}}
+			
+				{{#paper-item action="transitionTo" param="charts" id="chartsSideNav"}} Chart Elements{{/paper-item}}
+				{{#paper-item action="transitionTo" param="dataTable" id="dataTableSideNav"}}Data Table{{/paper-item}}
+			
+			{{/paper-list}}
+			
+		{{/paper-content}}
+
+	{{/paper-sidenav}}
+	
+
+<div layout="column" tabindex="-1" role="main" flex>
+	{{#paper-toolbar}}
+		<div class="md-toolbar-tools">
+			{{#paper-sidenav-toggle as |toggle|}}
+			{{#paper-button target=toggle action="toggleMenu" icon-button=true}}{{paper-icon icon="menu"}}{{/paper-button}}
+			{{/paper-sidenav-toggle}}
+			<span class="md-breadcrumb-page">Ember Material Starter</span>
+		</div>
+	{{/paper-toolbar}}
+	{{#paper-content class="md-padding"}}
+	{{#main-component-wrapper test="test"}}
+		   {{outlet}}
+	{{/main-component-wrapper}}
+	{{/paper-content}}
+</div>
+
+
+{{/paper-nav-container}}
+

@@ -1,0 +1,50 @@
+<!-- Trigger the modal with a button -->
+<div class={{floatClass}}>
+
+{{#paper-button  action="showModal" raised=true}}
+	{{paper-icon class="md-menu-origin" icon="info" }}
+{{/paper-button}}
+
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">{{header}}</h4>
+      </div>
+      <div class="modal-body">
+        {{#if isEachLoop}}
+        {{#paper-content class="md-whiteframe-z1 list-demo"}}
+		  {{#paper-list}}
+		    {{#each modalBody as |paramList index|}}
+		      {{#paper-item}}
+		       
+		        <div class="md-list-item-text">
+		          <h5>{{index}} . {{paramList.title}}</h5>
+		          
+		          <p>
+		            {{paramList.description}}
+		          </p>
+		        </div>
+		      {{/paper-item}}
+		     {{paper-divider}} 
+		    {{/each}}
+		  {{/paper-list}}
+		{{/paper-content}}
+	        
+		{{else}}
+			{{modalBody}}	
+        {{/if}}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>

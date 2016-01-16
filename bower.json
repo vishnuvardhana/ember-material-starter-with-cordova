@@ -11,6 +11,12 @@
     "ember-resolver": "~0.1.18",
     "jquery": "^1.11.3",
     "loader.js": "ember-cli/loader.js#3.2.1",
-    "qunit": "~1.18.0"
+    "qunit": "~1.18.0",
+    "hammerjs": "~2.0.6",
+    "matchMedia": "0.2.0",
+    "c3": "~0.4.10",
+    "bootstrap": "~3.3.6",
+    "cordova": "~3.4.0",
+    "datatables": "~1.10.10"
   }
 }
